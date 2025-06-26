@@ -1,25 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import hinhNen from './assets/hinhnen.mp4';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+
+      <div className='main-content'>
+        <video autoPlay loop muted playsInline className="video-bg">
+          <source src={hinhNen} type='video/mp4'/>
+        </video>
+
+        <div className='overlay'>
+          <div className='page-content'>
+          <section id='home'>
+             <Hero />
+          </section>
+           </div>
+          
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </>
   );
 }
 

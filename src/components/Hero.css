@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DynaPuff:wght@400..700&display=swap');
+
+.hero {
+    padding: 5rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avatar {
+    background-color:red;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.avatar img {
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.ten {
+    font-size: 5rem;
+    color:#e34d6e;
+      font-family: 'DynaPuff    ', cursive;
+}
+.vaiTro {
+    margin-top: -50px;
+    font-size: 3rem;
+    color:#2dbd81;
+     font-family: 'DynaPuff', cursive;
+}
+.infos {
+    display:flex;
+    gap: 4rem;
+    margin-top: 4rem;
+
+}
+.info {
+    display:flex;
+    flex-direction:column;
+    background-color:#232b28;
+    justify-content:center;
+    align-items: center;
+    width: 150px;
+    height: 120px;
+    border-radius:20%;
+    margin-top: -50px;
+    font-family: 'DynaPuff    ', cursive;
+}
+
+.giaTriInfo{
+    color:#a500cf;
+    font-size:40px;
+    height:50px;
+    margin-bottom: -25px;
+}
+.tenInfo {
+    color: white;
+    font-size:25px;
+}
+.navHero {
+    display:flex;
+    flex-direction: row;
+   
+    padding: 1rem;
+    justify-content: space-between;
+
+}
+.navlinksHero {
+    display:flex;
+   list-style: none;
+   gap: 5rem;
+   margin-left:-40px;
+   
+}
+.nav-linkHero {
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'DynaPuff', cursive;
+}
+.o {
+    background-color: rgba(128, 128, 128, 0.5); 
+    border-radius: 12px;
+    width: 260px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.vaiTro::after {
+    content: "|";
+    animation: blink 0.7s steps(1) infinite;
+}
+.vaiTro.done::after {
+    content: "";
+    animation: none;
+}
+@keyframes blink {
+    0%,50% {opacity:1;}
+    51%, 100% {opacity:0;}
+}

@@ -37,11 +37,17 @@
   }
 }
 .section {
-  padding: 100px 0;
-  }
+ 
+   scroll-margin-top: 50px;
+  
+}
 html {
   scroll-behavior: smooth;
 }
+#home {
+  scroll-margin-top: 50px;
+}
+
 .main-content {
   position:relative;
   min-height:100vh;
@@ -78,5 +84,5 @@ body,html {
   position:relative;
   z-index:1;
   padding : 100px 20px;
-  
+  padding-top: 100px;
 }

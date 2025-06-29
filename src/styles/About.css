@@ -1,6 +1,14 @@
 .about-section {
-    padding: 100px 20px;
-    //background-color: red
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 140px 20px;
+    background-color: red;
+  
+}
+#about {
+  scroll-margin-top: 10px; /* điều chỉnh đúng chiều cao của Navbar */
 }
 
 .about-container {

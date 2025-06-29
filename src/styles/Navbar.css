@@ -3,7 +3,9 @@
     width:100%;
     top: 0;
     left:0;
-    background-color: black;
+    height: 50px;
+    background-color: rgba(0, 134, 139, 0.2);
+     backdrop-filter: blur(10px);;
     color: white;
     padding: 1rem 3rem;
     display: flex;
@@ -11,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    
 }
 .hoTen{
     font-weight: bold;
@@ -31,13 +34,16 @@
     color: white;
     text-decoration: none;
     padding: 0.5rem 1.2rem;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
     background-color: purple;    
     color:white;
+    border-radius: 8px;
 }
 .nav-link.active {
   background-color: purple;
   font-weight: bold;
+  border-radius: 8px;
 }

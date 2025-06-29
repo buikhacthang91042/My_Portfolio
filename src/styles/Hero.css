@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DynaPuff:wght@400..700&display=swap');
 
+
 .hero {
     padding: 5rem;
     display:flex;
@@ -16,8 +17,14 @@
     display:flex;
     justify-content:center;
     align-items: center;
+    margin-top: -40px;
     
 }
+
+#hero {
+  scroll-margin-top: 100px;
+}
+
 .avatar img {
     width: 250px;
     height:250px;
@@ -25,13 +32,14 @@
     object-fit: cover;
 }
 .ten {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color:#e34d6e;
-      font-family: 'DynaPuff    ', cursive;
+    font-family: 'DynaPuff    ', cursive;
+    margin-top: 20px;
 }
 .vaiTro {
-    margin-top: -50px;
-    font-size: 3rem;
+    margin-top: -60px;
+    font-size: 2rem;
     color:#2dbd81;
      font-family: 'DynaPuff', cursive;
 }
@@ -47,8 +55,8 @@
     background-color:#232b28;
     justify-content:center;
     align-items: center;
-    width: 150px;
-    height: 120px;
+    width: 140px;
+    height: 100px;
     border-radius:20%;
     margin-top: -50px;
     font-family: 'DynaPuff    ', cursive;

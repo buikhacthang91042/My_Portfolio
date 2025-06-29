@@ -17,11 +17,11 @@ function App() {
 
         <div className='overlay'>
           <div className='page-content'>
-          <section id='home'>
+          <section id='home' className='section'>
              <Hero />
           </section>
 
-          <section id='about'>
+          <section id='about' className='section'>
               <About />
           </section>
            </div>

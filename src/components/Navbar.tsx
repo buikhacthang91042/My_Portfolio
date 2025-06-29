@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import '../styles/Navbar.css'
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState<string>("");
     const navItem: string[] = ["Home", "About", "Skills", "Project", "Contact"];

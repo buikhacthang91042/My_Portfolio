@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import '../styles/Navbar.css'
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState<string>("home");
     const navItem: string[] = ["Home", "About", "Skills", "Project", "Contact"];
-    
+    const isScrollning = useRef<boolean>(false);
    useEffect(() => {
   const observer = new IntersectionObserver(
     (entries) => {
+      if(!isScrollning.current) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveLink(entry.target.id);
         }
       });
+    }
     },
     {
-      rootMargin: "-50px 0px -90% 0px",
-      threshold: 0,
+      rootMargin: "-100px 0px -50% 0px",
+      threshold: 0.1,
     }
   );
 
@@ -38,7 +40,13 @@ const Navbar = () => {
   };
 }, []);
 
-    
+    const handleClick = (id: string) => {
+      setActiveLink(id);
+      isScrollning.current = true;
+      setTimeout(() => {
+        isScrollning.current = false;
+      },1000);
+    }
     return(
         <nav className="navbar">
             <h1 className="hoTen">Bùi Khắc Thắng</h1>
@@ -49,7 +57,7 @@ const Navbar = () => {
                         return (
                         <li key={id}>
                             <a href={`#${item.toLowerCase()}`} className={`nav-link ${activeLink === id ? 'active' : ''}`} 
-                                onClick={() => setActiveLink(id)}
+                                onClick={() => handleClick(id)}
                             
                             
                             >{item}</a>

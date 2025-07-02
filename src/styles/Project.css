@@ -1,0 +1,81 @@
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+
+}
+.project-container {
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    padding: 0 1rem;
+    
+}
+.project-title {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.project-information {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
+    margin-top:-70px;
+    width: 100%;
+    height: 400px;
+    background-color: yellow;
+    padding: 5px 1px;
+}
+.project-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: white;
+    height: 100%;
+   
+}
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.project-tech-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 0.9rem;
+    padding: 10px 0px;
+    margin-top: -10px;
+    
+}
+.project-tech-list li {
+   background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    padding: 5px 5px;
+    border: 1px solid #000000;
+    margin-left: 23px;
+}
+.project-title-des p {
+    margin-top: 0;
+    margin-left: 23px;
+}
+.project-title-des h2 {
+    margin-bottom: 0.25rem;
+    margin-left: 23px;
+}
+.project-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    
+}
+.btn-link {
+    font-size: 20px;
+    width: 90%;
+}

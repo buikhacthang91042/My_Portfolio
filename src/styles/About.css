@@ -3,12 +3,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 140px 20px;
-    background-color: red;
+    padding: 100px 20px;
+    ;
   
 }
 #about {
-  scroll-margin-top: 10px; /* điều chỉnh đúng chiều cao của Navbar */
+  scroll-margin-top: 80px; /* điều chỉnh đúng chiều cao của Navbar */
 }
 
 .about-container {
@@ -28,6 +28,8 @@
 .about-information {
     font-size: 1.1rem;
     line-height: 1.6;
+    margin-top: -20px;
+    color: white;
 }
 .skills {
     display: flex;
@@ -39,4 +41,12 @@
     border-radius: 10px;
     border: 1px solid #ccc;
     color: white;
+}
+.title-about {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom:100px;
+    color: white;
+    font-weight: bold;
 }
